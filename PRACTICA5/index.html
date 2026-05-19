@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica N 5 - JavaScript</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            background:#f2f2f2;
+            color:black;
+            line-height:1.6;
+        }
+
+        .contenedor{
+            width:90%;
+            max-width:1100px;
+            margin:auto;
+            padding:30px 0;
+        }
+
+        h1{
+            text-align:center;
+            background:#181919;
+            color:white;
+            padding:20px;
+            border-radius:10px;
+            margin-bottom:30px;
+        }
+
+        .card{
+            background:white;
+            padding:25px;
+            margin-bottom:25px;
+            border-radius:12px;
+            box-shadow:0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        h2{
+            color:black;
+            margin-bottom:15px;
+        }
+
+        h3{
+            color:black;
+            margin-top:15px;
+            margin-bottom:10px;
+        }
+
+        p{
+            margin-bottom:12px;
+        }
+
+        ol{
+            margin-left:20px;
+        }
+
+        ol li{
+            margin-bottom:10px;
+        }
+
+        pre{
+            background:black;
+            color:white;
+            padding:15px;
+            border-radius:0px;
+            overflow-x:auto;
+            margin-top:10px;
+            margin-bottom:15px;
+        }
+
+        .resultado{
+            background:#000;
+            color:white;
+            padding:15px;
+            border-radius:0px;
+            margin-top:10px;
+            white-space:pre-line;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <h1>PRÁCTICA N 5 - JAVASCRIPT</h1>
+
+        <div class="card">
+
+            <h2>1.- Formas de conectar HTML con JavaScript</h2>
+
+            <p>
+                Existen dos formas principales de conectar un archivo HTML con JavaScript.
+            </p>
+
+            <h3>a.- JavaScript Interno</h3>
+
+<pre>
+&lt;script&gt;
+    alert("Hola Mundo");
+&lt;/script&gt;
+</pre>
+
+            <h3>b.- JavaScript Externo</h3>
+
+<pre>
+&lt;script src="script.js"&gt;&lt;/script&gt;
+</pre>
+
+        </div>
+
+        <div class="card">
+
+            <h2>2.- Visualizar resultados en consola</h2>
+
+            <ol>
+                <li>Abrir el navegador.</li>
+                <li>Ingresar al HTML.</li>
+                <li>Presionar F12.</li>
+                <li>Ir a la pestaña Consola.</li>
+                <li>Usar console.log().</li>
+            </ol>
+
+<pre>
+console.log("Hola Mundo");
+</pre>
+
+        </div>
+
+        <div class="card">
+
+            <h2>3.- Variables en JavaScript</h2>
+
+            <p>
+                Las variables almacenan información dentro del programa.
+            </p>
+
+            <h3>var</h3>
+
+<pre>
+var nombre = "Juan";
+</pre>
+
+            <h3>let</h3>
+
+<pre>
+let edad = 20;
+</pre>
+
+            <h3>const</h3>
+
+<pre>
+const PI = 3.1416;
+</pre>
+
+            <p>
+                Actualmente no se recomienda usar var porque puede causar errores.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Resultados de los Ejercicios</h2>
+            <p>
+                A continuación se muestran los resultados de los ejercicios realizados en el archivo script.js.</p>
+        
+
+            <div id="salida" class="resultado"></div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
